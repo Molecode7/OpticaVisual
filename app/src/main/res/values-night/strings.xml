@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpticaVisual</string>
+    <string name="textcargando">Cargando...</string>
+    <string name="textlogin">Bienvenido</string>
+    <string name="botoniniciarsesion">Iniciar sesión</string>
+    <string name="ingresa_con_google">Continuar con google</string>
+    <string name="olvidar_contrasena">Olvidaste tu contraseña?</string>
+    <string name="no_tienes_cuenta">No tienes cuenta?</string>
+    <string name="botonregistrate">Registrate</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="telefono">Telefono</string>
+    <string name="btnCheckout">PAGAR AHORA</string>
+    <string name="productName">Producto</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="registrarse">Registrarte</string>
+    <string name="tienes_cuenta">Tienes cuenta?</string>
+    <string name="inicia_sesion">Inicia sesión</string>
+</resources>
