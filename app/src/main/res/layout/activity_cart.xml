@@ -3,63 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     android:background="@color/white">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewCart"
+        android:id="@+id/recyclerCart"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="8dp"/>
+        android:clipToPadding="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@android:color/white"
-        android:elevation="4dp">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:text="Total"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
+            android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/txtItemCount"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="0 items"
-                android:textSize="16sp"
-                android:textColor="#666666"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Total: "
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-
-            <TextView
-                android:id="@+id/txtTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/TxtTotal"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#4CAF50"/>
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnCheckout"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btnCheckout"
-            android:textColor="@android:color/white"
-            android:background="#4CAF50"
-            android:padding="16dp"/>
+            android:text="$0"
+            android:textStyle="bold"
+            android:textSize="16sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Comprar"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp" />
 </LinearLayout>
+
