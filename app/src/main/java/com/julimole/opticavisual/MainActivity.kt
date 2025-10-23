@@ -1,24 +1,21 @@
 package com.julimole.opticavisual
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.julimole.opticavisual.R
+import com.julimole.opticavisual.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val btnRegister = findViewById<Button>(R.id.botonregistrate)
+        // Usamos ViewBinding como en tus otras Activities
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        btnRegister.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+        // Mensaje o acción de ejemplo
+        binding.textViewWelcome.text = "Bienvenido a Óptica Visual 👓"
     }
-
 }
