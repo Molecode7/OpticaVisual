@@ -1,23 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OpticaVisual</string>
+    <!-- 🧭 App General -->
+    <string name="app_name">Óptica Visual</string>
     <string name="text_cargando">Cargando...</string>
     <string name="text_bienvenido">Bienvenido</string>
+
+    <!-- 🔐 Login / Registro -->
     <string name="botoniniciarsesion">Iniciar sesión</string>
-    <string name="ingresa_con_google">Continuar con google</string>
-    <string name="olvidar_contrasena">Olvidaste tu contraseña?</string>
-    <string name="no_tienes_cuenta">No tienes cuenta?</string>
-    <string name="botonregistrate">Registrate</string>
-    <string name="nombres">Nombres</string>
+    <string name="ingresa_con_google">Continuar con Google</string>
+    <string name="olvidar_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="botonregistrate">Regístrate</string>
+    <string name="registrarse">Registrarte</string>
+    <string name="tienes_cuenta">¿Tienes cuenta?</string>
+    <string name="inicia_sesion">Inicia sesión</string>
+
+    <!-- 🧍 Datos de usuario -->
+    <string name="nombres">Nombres Prueba</string>
     <string name="apellidos">Apellidos</string>
     <string name="correo_electronico">Correo electrónico</string>
-    <string name="telefono">Telefono</string>
-    <string name="btnCheckout">PAGAR AHORA</string>
-    <string name="TxtTotal">$0.00</string>
-    <string name="productName">Producto</string>
-    <string name="quantity">1</string>
-    <string name="productPrice">$0.00</string>
+    <string name="telefono">Teléfono</string>
     <string name="contrasena">Contraseña</string>
-    <string name="registrarse">Registrarte</string>
-    <string name="tienes_cuenta">Tienes cuenta?</string>
-    <string name="inicia_sesion">Inicia sesión</string>
+
+    <!-- 🏠 Home / Productos -->
+    <string name="text_bienvenido_app">Bienvenido a Óptica Visual 👓</string>
+    <string name="buscar_productos">Buscar productos...</string>
+    <string name="mas_informacion">Más información</string>
+    <string name="precio">Precio</string>
+    <string name="agregar_carrito">Agregar al carrito</string>
+    <string name="carrito">Carrito</string>
+    <string name="sin_productos">No hay productos disponibles</string>
+
+    <!-- 🛒 Carrito -->
+    <string name="btnCheckout">PAGAR AHORA</string>
+    <string name="TxtTotal">Total: $0.00</string>
+    <string name="productName">Producto</string>
+    <string name="quantity">Cantidad</string>
+    <string name="productPrice">$0.00</string>
+    <string name="carrito_vacio">Tu carrito está vacío</string>
+
+    <!-- 📱 Navegación lateral -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_agendar">Agendar Cita</string>
+    <string name="nav_favoritos">Mis Favoritos</string>
+    <string name="nav_productos">Productos</string>
+    <string name="nav_tiendas">Tiendas</string>
+    <string name="nav_cerrar_sesion">Cerrar Sesión</string>
+
+    <!-- 💬 Mensajes -->
+    <string name="mensaje_bienvenida">Bienvenido a Óptica Visual 👓</string>
+    <string name="mensaje_error_campos">Por favor ingresa tus datos</string>
+    <string name="mensaje_login_exitoso">Inicio de sesión exitoso</string>
+    <string name="mensaje_cerrando_sesion">Cerrando sesión...</string>
+    <string name="mensaje_carrito_vacio">No hay productos en el carrito</string>
+
+    <!-- 🔧 Otros -->
+    <string name="buscar">Buscar</string>
+    <string name="ver_detalles">Ver detalles</string>
+    <string name="volver">Volver</string>
 </resources>

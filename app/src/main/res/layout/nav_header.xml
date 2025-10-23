@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/blue">
+
+    <!-- Avatar circular -->
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/bg_circle_white"
+        android:padding="8dp"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombres"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp" />
+
+    <!-- Correo o rol opcional -->
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo_electronico"
+        android:textSize="14sp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,83 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@color/white">
+    android:padding="16dp">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <!-- Incluye la barra superior -->
+    <include
+        layout="@layout/include_topbar"
+        android:id="@+id/topBar" />
+
+    <!-- Contenido desplazable -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/imgDetail"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/ic_glasses"
-            android:scaleType="fitCenter" />
-
-        <TextView
-            android:id="@+id/txtNameDetail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gafas de Sol Cuadradas"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/txtDescDetail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gafas de sol modernas con protección UV400..."
-            android:layout_marginTop="4dp" />
-
-        <TextView
-            android:id="@+id/txtPriceDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$12.000"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_marginTop="6dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Colores disponibles:"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginEnd="8dp"
-                android:background="#000000"
-                android:layout_margin="4dp"
-                android:backgroundTintMode="src_over" />
-
-            <View
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:background="#2196F3"
-                android:layout_margin="4dp" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btnAddCart"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agregar al Carrito"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/blue"
-            android:textColor="@color/white"
-            android:layout_marginTop="16dp" />
-    </LinearLayout>
-</ScrollView>
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_glasses"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/txtNameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gafas de Sol Cuadradas"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtDescDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gafas de sol modernas con protección UV400..."
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtPriceDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$12.000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colores disponibles:"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="#2196F3" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar al Carrito"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

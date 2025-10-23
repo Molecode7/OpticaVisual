@@ -15,7 +15,7 @@ class ProductAdapter(
     private val onItemClick: (Product) -> Unit
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
-    inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ProductViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val image: ImageView = view.findViewById(R.id.imgProduct)
         val name: TextView = view.findViewById(R.id.txtName)
         val price: TextView = view.findViewById(R.id.txtPrice)
@@ -23,9 +23,8 @@ class ProductAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_product, parent, false)
-        return ProductViewHolder(view)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false)
+        return ProductViewHolder(v)
     }
 
     override fun getItemCount() = products.size
@@ -34,7 +33,14 @@ class ProductAdapter(
         val product = products[position]
         holder.image.setImageResource(product.imageRes)
         holder.name.text = product.name
-        holder.price.text = "$${product.price}"
+
+        // Precio con separadores: $12,000
+        holder.price.text = "$" + "%,d".format(product.price)
+
+        // Click en botón
         holder.btnInfo.setOnClickListener { onItemClick(product) }
+        // Click en toda la tarjeta
+        holder.view.setOnClickListener { onItemClick(product) }
     }
 }
+
