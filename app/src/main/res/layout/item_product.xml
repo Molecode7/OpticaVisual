@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:background="@drawable/bg_card"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_glasses" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gafas de Sol Cuadradas"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$12.000"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Más Información"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
